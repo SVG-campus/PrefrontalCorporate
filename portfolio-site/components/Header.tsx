@@ -22,8 +22,6 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-gray-600 hover:text-blue-500">Home</Link>
           <Link href="/research" className="text-gray-600 hover:text-blue-500">Research</Link>
-          <Link href="/contact" className="text-gray-600 hover:text-blue-500">Contact</Link>
-          <Link href="/collaborate" className="text-gray-600 hover:text-blue-500">Collaborate</Link>
           <a href="https://www.linkedin.com/in/prefrontalcorporate/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500">LinkedIn</a>
           <a href="https://github.com/SVG-campus" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500">GitHub</a>
         </nav>

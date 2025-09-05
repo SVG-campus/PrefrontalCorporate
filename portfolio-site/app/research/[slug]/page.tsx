@@ -1,7 +1,6 @@
 import { researchData } from '@/data/research';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Comments from '@/components/Comments';
 
 interface ResearchDetailPageProps {
   params: {
@@ -40,7 +39,6 @@ export default function ResearchDetailPage({ params }: ResearchDetailPageProps) 
         )}
       </div>
 
-      <Comments topicId={slug} />
     </article>
   );
 }
