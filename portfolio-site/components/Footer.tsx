@@ -6,8 +6,6 @@ const Footer = () => {
     { name: 'CBB Homes', url: 'https://cbb.homes' },
     { name: 'Icon Coupons', url: 'https://icon.coupons' },
     { name: 'Fort Health', url: 'https://fort.health' },
-    { name: 'Affiliate Placeholder 1', url: '#' },
-    { name: 'Affiliate Placeholder 2', url: '#' },
   ];
 
   return (

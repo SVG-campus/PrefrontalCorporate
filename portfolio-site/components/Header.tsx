@@ -33,6 +33,9 @@ const Header = () => {
           <Button variant="ghost" asChild>
             <a href="https://github.com/SVG-campus" target="_blank" rel="noopener noreferrer">GitHub</a>
           </Button>
+          <Button variant="ghost" asChild>
+            <a href="https://orcid.org/0009-0004-9601-5617" target="_blank" rel="noopener noreferrer">ORCID</a>
+          </Button>
         </nav>
       </div>
     </header>

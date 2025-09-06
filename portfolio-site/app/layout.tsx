@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Prefrontal Corporate",
+  title: "Prefrontal Corporate: RESEARCH",
   description: "The official portfolio for Prefrontal Corporate.",
 };
 
@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 flex flex-col min-h-screen`}
       >
         <Header />
-        <main className="flex-grow container mx-auto px-4 py-8">
+        <main className="flex-grow container mx-auto px-6 sm:px-8 md:px-10 py-8">
           {children}
         </main>
         <Footer />

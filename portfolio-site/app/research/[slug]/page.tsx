@@ -20,14 +20,19 @@ export default function ResearchDetailPage({ params }: ResearchDetailPageProps) 
   return (
     <article className="max-w-4xl mx-auto">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{project.title}</h1>
-      <p className="text-lg text-gray-600 mb-2">
-        Category: <span className="font-semibold">{project.category}</span>
-      </p>
+      <div className="text-lg text-muted-foreground mb-4 space-x-4">
+        <span>Category: <span className="font-semibold text-foreground">{project.category}</span></span>
+        <span>&bull;</span>
+        <span>Date: <span className="font-semibold text-foreground">{project.date}</span></span>
+      </div>
 
       <div className="prose lg:prose-xl max-w-none mt-8">
         <p>{project.summary}</p>
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-4">
         {project.githubUrl && (
-          <Button asChild className="mt-6">
+          <Button asChild>
             <a
               href={project.githubUrl}
               target="_blank"
@@ -37,6 +42,9 @@ export default function ResearchDetailPage({ params }: ResearchDetailPageProps) 
             </a>
           </Button>
         )}
+        <Button variant="outline" disabled>
+          Temp. Button For Publication Link
+        </Button>
       </div>
 
     </article>
