@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   const year = new Date().getFullYear();
   const affiliates = [
-    { name: 'CBB Homes', url: 'https://cbb.homes' },
-    { name: 'Icon Coupons', url: 'https://icon.coupons' },
-    { name: 'Fort Health', url: 'https://fort.health' },
+    { name: 'CBB', url: 'https://cbb.homes' },
+    { name: 'icon', url: 'https://icon.coupons' },
+    { name: 'Fort', url: 'https://fort.health' },
   ];
 
   return (
