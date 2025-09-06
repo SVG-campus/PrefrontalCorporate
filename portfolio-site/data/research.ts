@@ -1,0 +1,147 @@
+export interface ResearchProject {
+  slug: string;
+  title: string;
+  summary: string;
+  category: string;
+  featured: boolean;
+  githubUrl?: string;
+  date: string;
+}
+
+export const researchData: ResearchProject[] = [
+  {
+    slug: 'in-silico-brain-drug-delivery-simulation',
+    title: 'In-Silico Brain Drug Delivery Simulation',
+    summary: 'A computational model simulating the delivery of therapeutic agents across the blood-brain barrier. This project explores novel methods for increasing drug efficacy for neurological disorders.',
+    category: 'Medical',
+    featured: true,
+    githubUrl: 'https://github.com/SVG-campus/In-Silico-Brain-Drug-Delivery-Simulation',
+    date: 'October 2025',
+  },
+  {
+    slug: 'unified-robust-duality-informed-convex-equilibrium-allocation-theory',
+    title: 'Unified Robust Duality‑Informed Convex Equilibrium Allocation Theory',
+    summary: 'This repository provides a reproducible implementation of a duality-informed convex equilibrium allocation theory. It features a robust solver that finds portfolio weights by minimizing a convex objective that combines risk, return, and distributional robustness, while enforcing simplex constraints.',
+    category: 'Economics',
+    featured: true,
+    githubUrl: 'https://github.com/SVG-campus/Unified-Robust-Duality-Informed-Convex-Equilibrium-Allocation-Theory',
+    date: 'September 2025',
+  },
+  {
+    slug: 'cvar-adjusted-update-module',
+    title: 'CVaR-Adjusted Update Module',
+    summary: 'This module provides a production-ready implementation for a CVaR-Adjusted Update to portfolio weights. The method explicitly penalizes tail risk by down-weighting assets with larger Conditional Value-at-Risk (CVaR), making allocations more robust to extreme downside events.',
+    category: 'Economics',
+    featured: true,
+    githubUrl: 'https://github.com/SVG-campus/CVaR-Adjusted-Update-Module',
+    date: 'August 2025',
+  },
+  {
+    slug: 'reinforcement-learning-inspired-adjustment-module',
+    title: 'Reinforcement Learning–Inspired Adjustment Module',
+    summary: 'This module provides a production-ready implementation of a portfolio weight adjustment mechanism inspired by reinforcement learning. It updates weights using a simple multiplicative rule based on a reward signal, ensuring the portfolio remains valid and normalized.',
+    category: 'Economics',
+    featured: false,
+    githubUrl: 'https://github.com/SVG-campus/Reinforcement-Learning-Inspired-Adjustment-Module',
+    date: 'July 2025',
+  },
+  {
+    slug: 'entropy-regularization-module',
+    title: 'Entropy Regularization Module',
+    summary: 'A production-ready implementation of an Entropy Regularization Module. This module encourages portfolio diversification and robustness by penalizing concentrated allocations, using an entropy term and an exponentiated-gradient update.',
+    category: 'Economics',
+    featured: false,
+    githubUrl: 'https://github.com/SVG-campus/Entropy-Regularization-Module',
+    date: 'June 2025',
+  },
+  {
+    slug: 'autocorrelation-penalty-module',
+    title: 'Autocorrelation Penalty Module',
+    summary: 'This module provides a production-ready implementation of an autocorrelation penalty for portfolio updates. The method detects serial correlation in a signal using a Ljung-Box test and applies a shrinkage penalty to reduce exposure when strong autocorrelation is present.',
+    category: 'Economics',
+    featured: false,
+    githubUrl: 'https://github.com/SVG-campus/Autocorrelation-Penalty-Module',
+    date: 'May 2025',
+  },
+  {
+    slug: 'wasserstein-distributionally-robust-optimization-dro-module',
+    title: 'Wasserstein Distributionally Robust Optimization (DRO) Module',
+    summary: 'A production-ready implementation of a Wasserstein Distributionally Robust Optimization (DRO) penalty for portfolio updates. This module hedges against distribution shift by penalizing the divergence between historical mean returns and a stressed or perturbed mean.',
+    category: 'Economics',
+    featured: false,
+    githubUrl: 'https://github.com/SVG-campus/Wasserstein-Distributionally-Robust-Optimization-DRO-Module',
+    date: 'April 2025',
+  },
+  {
+    slug: 'executive-function-in-startups',
+    title: 'Mapping Executive Function in Startup Founders',
+    summary: 'An ongoing study analyzing the correlation between key executive functions (e.g., cognitive flexibility, working memory) and success metrics in early-stage technology startups.',
+    category: 'Executive Entrepreneurship',
+    featured: true,
+    date: 'August 2025',
+  },
+  {
+    slug: 'federated-learning-for-privacy',
+    title: 'Federated Learning for Privacy-Preserving AI',
+    summary: 'An implementation of a federated learning system that trains machine learning models on decentralized data without compromising user privacy.',
+    category: 'Machine Learning Algorithms',
+    featured: false,
+    date: 'July 2025',
+  },
+  {
+    slug: 'neuro-inspired-ai-models',
+    title: 'Neuro-Inspired AI Models for Pattern Recognition',
+    summary: 'Developing next-generation artificial intelligence by mimicking neural structures found in the human visual cortex to improve the accuracy and efficiency of pattern recognition tasks.',
+    category: 'Artificial Intelligence',
+    featured: false,
+    date: 'June 2025',
+  },
+  {
+    slug: 'placeholder-physics',
+    title: 'Placeholder Physics Project',
+    summary: 'A placeholder summary for a future project in the field of theoretical physics.',
+    category: 'Physics',
+    featured: false,
+    date: 'May 2025',
+  },
+  {
+    slug: 'placeholder-law',
+    title: 'Placeholder Law Project',
+    summary: 'A placeholder summary for a future project exploring the intersection of law and technology.',
+    category: 'Law',
+    featured: false,
+    date: 'April 2025',
+  },
+  {
+    slug: 'placeholder-math',
+    title: 'Placeholder Math Project',
+    summary: 'A placeholder summary for a future project in advanced mathematical theory.',
+    category: 'Math',
+    featured: false,
+    date: 'March 2025',
+  },
+  {
+    slug: 'placeholder-ee',
+    title: 'Placeholder Electrical Engineering Project',
+    summary: 'A placeholder summary for a future project in electrical engineering.',
+    category: 'Electrical Engineering',
+    featured: false,
+    date: 'February 2025',
+  },
+  {
+    slug: 'placeholder-luxury',
+    title: 'Placeholder Luxury Theory Project',
+    summary: 'A placeholder summary for a future project analyzing the principles of luxury theory.',
+    category: 'Luxury Theory',
+    featured: false,
+    date: 'January 2025',
+  },
+  {
+    slug: 'placeholder-hospitality',
+    title: 'Placeholder Hospitality Project',
+    summary: 'A placeholder summary for a future project in the hospitality industry.',
+    category: 'Hospitality',
+    featured: false,
+    date: 'December 2024',
+  },
+];
