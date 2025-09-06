@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+
 const Footer = () => {
   const year = new Date().getFullYear();
   const affiliates = [
