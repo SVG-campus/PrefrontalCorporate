@@ -6,9 +6,11 @@ export interface ResearchProject {
   featured: boolean;
   githubUrl?: string;
   date: string;
+  status?: 'published' | 'coming-soon';
 }
 
 export const researchData: ResearchProject[] = [
+  // Medical
   {
     slug: 'in-silico-brain-drug-delivery-simulation',
     title: 'In-Silico Brain Drug Delivery Simulation',
@@ -17,7 +19,40 @@ export const researchData: ResearchProject[] = [
     featured: true,
     githubUrl: 'https://github.com/SVG-campus/In-Silico-Brain-Drug-Delivery-Simulation',
     date: 'October 2025',
+    status: 'published',
   },
+  // Machine Learning
+  {
+    slug: 'infinite-dimensional-bayesian-posterior-operator',
+    title: 'Infinite-Dimensional Bayesian Posterior Operator',
+    summary: 'This repository develops and validates an infinite-dimensional Bayesian posterior operator for updating distributions over asset weights or model parameters. It supports nonparametric modeling using Gaussian process priors to fully quantify uncertainty in hierarchical asset allocation.',
+    category: 'Machine Learning Algorithms',
+    featured: true,
+    githubUrl: 'https://github.com/SVG-campus/Infinite-Dimensional-Bayesian-Posterior-Operator',
+    date: 'November 2025',
+    status: 'published',
+  },
+  {
+    slug: 'kolmogorov-complexity-constraint-module',
+    title: 'Kolmogorov Complexity Constraint Module',
+    summary: 'This module introduces a novel regularization framework for portfolio optimization that explicitly penalizes allocation strategies based on their Kolmogorov complexity, aiming to favor simpler, more robust strategies.',
+    category: 'Machine Learning Algorithms',
+    featured: true,
+    githubUrl: 'https://github.com/SVG-campus/Kolmogorov-Complexity-Constraint-Module',
+    date: 'October 2025',
+    status: 'published',
+  },
+  {
+    slug: 'multi-information-bottleneck-module',
+    title: 'Multi-Information Bottleneck Module',
+    summary: 'This module presents a rigorous formulation of a Multi-Information Bottleneck (MIB), designed to compress multiple predictive signals into a robust, minimal representation for portfolio decision-making.',
+    category: 'Machine Learning Algorithms',
+    featured: false,
+    githubUrl: 'https://github.com/SVG-campus/Multi-Information-Bottleneck-Module',
+    date: 'September 2025',
+    status: 'published',
+  },
+  // Economics
   {
     slug: 'unified-robust-duality-informed-convex-equilibrium-allocation-theory',
     title: 'Unified Robust Duality‑Informed Convex Equilibrium Allocation Theory',
@@ -26,6 +61,7 @@ export const researchData: ResearchProject[] = [
     featured: true,
     githubUrl: 'https://github.com/SVG-campus/Unified-Robust-Duality-Informed-Convex-Equilibrium-Allocation-Theory',
     date: 'September 2025',
+    status: 'published',
   },
   {
     slug: 'cvar-adjusted-update-module',
@@ -35,6 +71,7 @@ export const researchData: ResearchProject[] = [
     featured: true,
     githubUrl: 'https://github.com/SVG-campus/CVaR-Adjusted-Update-Module',
     date: 'August 2025',
+    status: 'published',
   },
   {
     slug: 'reinforcement-learning-inspired-adjustment-module',
@@ -44,6 +81,7 @@ export const researchData: ResearchProject[] = [
     featured: false,
     githubUrl: 'https://github.com/SVG-campus/Reinforcement-Learning-Inspired-Adjustment-Module',
     date: 'July 2025',
+    status: 'published',
   },
   {
     slug: 'entropy-regularization-module',
@@ -53,6 +91,7 @@ export const researchData: ResearchProject[] = [
     featured: false,
     githubUrl: 'https://github.com/SVG-campus/Entropy-Regularization-Module',
     date: 'June 2025',
+    status: 'published',
   },
   {
     slug: 'autocorrelation-penalty-module',
@@ -62,6 +101,7 @@ export const researchData: ResearchProject[] = [
     featured: false,
     githubUrl: 'https://github.com/SVG-campus/Autocorrelation-Penalty-Module',
     date: 'May 2025',
+    status: 'published',
   },
   {
     slug: 'wasserstein-distributionally-robust-optimization-dro-module',
@@ -71,77 +111,34 @@ export const researchData: ResearchProject[] = [
     featured: false,
     githubUrl: 'https://github.com/SVG-campus/Wasserstein-Distributionally-Robust-Optimization-DRO-Module',
     date: 'April 2025',
+    status: 'published',
   },
+  // Coming Soon
   {
-    slug: 'executive-function-in-startups',
-    title: 'Mapping Executive Function in Startup Founders',
-    summary: 'An ongoing study analyzing the correlation between key executive functions (e.g., cognitive flexibility, working memory) and success metrics in early-stage technology startups.',
-    category: 'Executive Entrepreneurship',
-    featured: true,
-    date: 'August 2025',
-  },
-  {
-    slug: 'federated-learning-for-privacy',
-    title: 'Federated Learning for Privacy-Preserving AI',
-    summary: 'An implementation of a federated learning system that trains machine learning models on decentralized data without compromising user privacy.',
-    category: 'Machine Learning Algorithms',
+    slug: 'von-neumann-algebra-stabilization-module',
+    title: 'Von Neumann Algebra Stabilization Module',
+    summary: 'Coming Soon, in GitHub, but applying to jobs and can not code it.',
+    category: 'Partial Differential Equations',
     featured: false,
-    date: 'July 2025',
+    date: 'Forthcoming',
+    status: 'coming-soon',
   },
   {
-    slug: 'neuro-inspired-ai-models',
-    title: 'Neuro-Inspired AI Models for Pattern Recognition',
-    summary: 'Developing next-generation artificial intelligence by mimicking neural structures found in the human visual cortex to improve the accuracy and efficiency of pattern recognition tasks.',
-    category: 'Artificial Intelligence',
+    slug: 'quantum-kernel-qubo-game',
+    title: 'Quantum Kernel Qubo Game',
+    summary: 'Coming Soon, in GitHub, but applying to jobs and can not code it.',
+    category: 'Quantum Kernel',
     featured: false,
-    date: 'June 2025',
+    date: 'Forthcoming',
+    status: 'coming-soon',
   },
   {
-    slug: 'placeholder-physics',
-    title: 'Placeholder Physics Project',
-    summary: 'A placeholder summary for a future project in the field of theoretical physics.',
-    category: 'Physics',
+    slug: 'quantum-entangled-kernel',
+    title: 'Quantum Entangled Kernel',
+    summary: 'Coming Soon, in GitHub, but applying to jobs and can not code it.',
+    category: 'Quantum Kernel',
     featured: false,
-    date: 'May 2025',
-  },
-  {
-    slug: 'placeholder-law',
-    title: 'Placeholder Law Project',
-    summary: 'A placeholder summary for a future project exploring the intersection of law and technology.',
-    category: 'Law',
-    featured: false,
-    date: 'April 2025',
-  },
-  {
-    slug: 'placeholder-math',
-    title: 'Placeholder Math Project',
-    summary: 'A placeholder summary for a future project in advanced mathematical theory.',
-    category: 'Math',
-    featured: false,
-    date: 'March 2025',
-  },
-  {
-    slug: 'placeholder-ee',
-    title: 'Placeholder Electrical Engineering Project',
-    summary: 'A placeholder summary for a future project in electrical engineering.',
-    category: 'Electrical Engineering',
-    featured: false,
-    date: 'February 2025',
-  },
-  {
-    slug: 'placeholder-luxury',
-    title: 'Placeholder Luxury Theory Project',
-    summary: 'A placeholder summary for a future project analyzing the principles of luxury theory.',
-    category: 'Luxury Theory',
-    featured: false,
-    date: 'January 2025',
-  },
-  {
-    slug: 'placeholder-hospitality',
-    title: 'Placeholder Hospitality Project',
-    summary: 'A placeholder summary for a future project in the hospitality industry.',
-    category: 'Hospitality',
-    featured: false,
-    date: 'December 2024',
+    date: 'Forthcoming',
+    status: 'coming-soon',
   },
 ];
