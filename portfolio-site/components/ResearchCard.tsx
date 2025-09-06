@@ -14,6 +14,24 @@ interface ResearchCardProps {
 }
 
 const ResearchCard = ({ project }: ResearchCardProps) => {
+  if (project.status === 'coming-soon') {
+    return (
+      <Card className="flex flex-col h-full bg-slate-50 border-dashed">
+        <CardHeader>
+          <CardTitle className="text-muted-foreground">{project.title}</CardTitle>
+        </CardHeader>
+        <CardContent className="flex-grow">
+          <p className="text-slate-400 italic">{project.summary}</p>
+        </CardContent>
+        <CardFooter>
+          <Button variant="outline" disabled>
+            Coming Soon
+          </Button>
+        </CardFooter>
+      </Card>
+    );
+  }
+
   return (
     <Card className="flex flex-col h-full">
       <CardHeader>

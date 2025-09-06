@@ -4,6 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+const homepageCategoryOrder = [
+  'Medical',
+  'Machine Learning Algorithms',
+  'Economics',
+];
+
 export default function Home() {
   const featuredProjects = researchData.filter((p) => p.featured);
 
@@ -45,23 +51,29 @@ export default function Home() {
             <p className="text-muted-foreground mt-2">A selection of recent and notable projects.</p>
         </div>
 
-        {Object.entries(featuredByCategory).map(([category, projects]) => (
-            <div key={category}>
-                <h3 className="text-2xl font-semibold mb-6">{category}</h3>
-                <div className="grid md:grid-cols-2 gap-10">
-                    {projects.map((project) => (
-                        <ResearchCard key={project.slug} project={project} />
-                    ))}
+        {homepageCategoryOrder.map((category) => {
+            const projects = featuredByCategory[category];
+            if (!projects || projects.length === 0) {
+                return null; // Don't render a section if there are no featured projects in that category
+            }
+            return (
+                <div key={category}>
+                    <h3 className="text-2xl font-semibold mb-6">{category}</h3>
+                    <div className="grid md:grid-cols-2 gap-10">
+                        {projects.map((project) => (
+                            <ResearchCard key={project.slug} project={project} />
+                        ))}
+                    </div>
+                    <div className="text-center mt-8">
+                        <Button variant="outline" asChild>
+                            <Link href={`/research/category/${encodeURIComponent(category)}`}>
+                                View all in {category}
+                            </Link>
+                        </Button>
+                    </div>
                 </div>
-                <div className="text-center mt-8">
-                    <Button variant="outline" asChild>
-                        <Link href={`/research/category/${encodeURIComponent(category)}`}>
-                            View all in {category}
-                        </Link>
-                    </Button>
-                </div>
-            </div>
-        ))}
+            );
+        })}
       </section>
     </div>
   );
