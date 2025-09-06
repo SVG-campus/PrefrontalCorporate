@@ -5,6 +5,7 @@ export interface ResearchProject {
   category: string;
   featured: boolean;
   githubUrl?: string;
+  date: string;
 }
 
 export const researchData: ResearchProject[] = [
@@ -15,6 +16,7 @@ export const researchData: ResearchProject[] = [
     category: 'Medical',
     featured: true,
     githubUrl: 'https://github.com/SVG-campus/In-Silico-Brain-Drug-Delivery-Simulation',
+    date: 'October 2025',
   },
   {
     slug: 'economic-modeling-of-tech-adoption',
@@ -22,6 +24,7 @@ export const researchData: ResearchProject[] = [
     summary: 'This project analyzes the economic factors influencing the adoption rate of new technologies in emerging markets, using predictive modeling to forecast market penetration.',
     category: 'Economics',
     featured: false,
+    date: 'September 2025',
   },
   {
     slug: 'executive-function-in-startups',
@@ -29,6 +32,7 @@ export const researchData: ResearchProject[] = [
     summary: 'An ongoing study analyzing the correlation between key executive functions (e.g., cognitive flexibility, working memory) and success metrics in early-stage technology startups.',
     category: 'Executive Entrepreneurship',
     featured: true,
+    date: 'August 2025',
   },
   {
     slug: 'federated-learning-for-privacy',
@@ -36,6 +40,7 @@ export const researchData: ResearchProject[] = [
     summary: 'An implementation of a federated learning system that trains machine learning models on decentralized data without compromising user privacy.',
     category: 'Machine Learning Algorithms',
     featured: false,
+    date: 'July 2025',
   },
   {
     slug: 'neuro-inspired-ai-models',
@@ -43,6 +48,7 @@ export const researchData: ResearchProject[] = [
     summary: 'Developing next-generation artificial intelligence by mimicking neural structures found in the human visual cortex to improve the accuracy and efficiency of pattern recognition tasks.',
     category: 'Artificial Intelligence',
     featured: false,
+    date: 'June 2025',
   },
   {
     slug: 'placeholder-physics',
@@ -50,6 +56,7 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project in the field of theoretical physics.',
     category: 'Physics',
     featured: false,
+    date: 'May 2025',
   },
   {
     slug: 'placeholder-law',
@@ -57,6 +64,7 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project exploring the intersection of law and technology.',
     category: 'Law',
     featured: false,
+    date: 'April 2025',
   },
   {
     slug: 'placeholder-math',
@@ -64,6 +72,7 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project in advanced mathematical theory.',
     category: 'Math',
     featured: false,
+    date: 'March 2025',
   },
   {
     slug: 'placeholder-ee',
@@ -71,6 +80,7 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project in electrical engineering.',
     category: 'Electrical Engineering',
     featured: false,
+    date: 'February 2025',
   },
   {
     slug: 'placeholder-luxury',
@@ -78,6 +88,7 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project analyzing the principles of luxury theory.',
     category: 'Luxury Theory',
     featured: false,
+    date: 'January 2025',
   },
   {
     slug: 'placeholder-hospitality',
@@ -85,5 +96,6 @@ export const researchData: ResearchProject[] = [
     summary: 'A placeholder summary for a future project in the hospitality industry.',
     category: 'Hospitality',
     featured: false,
+    date: 'December 2024',
   },
 ];
