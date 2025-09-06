@@ -29,7 +29,7 @@ export default function Home() {
           className="mx-auto mb-6 rounded-full"
         />
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Welcome to Prefrontal Corporate
+          Prefrontal Corporate: RESEARCH 2025
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
           Exploring the intersection of Neuroscience and Executive Entrepreneurship. My mission is to mentor the next generation and provide access to cutting-edge technology. This is the beginning of a journey to build a community and share knowledge.
