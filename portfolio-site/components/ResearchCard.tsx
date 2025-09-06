@@ -1,5 +1,13 @@
 import Link from 'next/link';
 import type { ResearchProject } from '@/data/research';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 interface ResearchCardProps {
   project: ResearchProject;
@@ -7,16 +15,21 @@ interface ResearchCardProps {
 
 const ResearchCard = ({ project }: ResearchCardProps) => {
   return (
-    <div className="border rounded-lg p-6 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <h3 className="text-xl font-bold mb-2 text-gray-800">{project.title}</h3>
-      <p className="text-gray-600 mb-4">{project.summary}</p>
-      <Link
-        href={`/research/${project.slug}`}
-        className="text-blue-600 hover:underline font-semibold"
-      >
-        Read More &rarr;
-      </Link>
-    </div>
+    <Card className="flex flex-col h-full">
+      <CardHeader>
+        <CardTitle>{project.title}</CardTitle>
+      </CardHeader>
+      <CardContent className="flex-grow">
+        <p className="text-muted-foreground">{project.summary}</p>
+      </CardContent>
+      <CardFooter>
+        <Button asChild variant="outline">
+          <Link href={`/research/${project.slug}`}>
+            Read More
+          </Link>
+        </Button>
+      </CardFooter>
+    </Card>
   );
 };
 

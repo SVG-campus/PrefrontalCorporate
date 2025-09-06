@@ -18,8 +18,8 @@ export default function ResearchPage() {
 
       {Object.entries(projectsByCategory).map(([category, projects]) => (
         <section key={category}>
-          <h2 className="text-3xl font-bold mb-6 border-b pb-2">{category}</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-8 border-b pb-4">{category}</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project) => (
               <ResearchCard key={project.slug} project={project} />
             ))}
