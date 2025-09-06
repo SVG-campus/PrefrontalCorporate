@@ -6,9 +6,9 @@ export default function Home() {
   const featuredProjects = researchData.filter((p) => p.featured);
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-20">
       {/* Hero/About Section */}
-      <section className="text-center">
+      <section className="text-center pt-8">
         <Image
           src="https://raw.githubusercontent.com/SVG-campus/PrefrontalCorporate/refs/heads/main/Prefrontal%20Corporate.png"
           alt="Prefrontal Corporate Avatar"
@@ -26,10 +26,10 @@ export default function Home() {
 
       {/* Featured Research Section */}
       <section>
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
           Featured Research
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
           {featuredProjects.map((project) => (
             <ResearchCard key={project.slug} project={project} />
           ))}

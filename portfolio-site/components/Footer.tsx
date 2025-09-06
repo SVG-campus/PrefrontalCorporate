@@ -9,11 +9,11 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-800 text-white mt-12">
-      <div className="container mx-auto px-4 py-6">
-        <div className="text-center mb-4">
+    <footer className="bg-gray-800 text-white mt-20">
+      <div className="container mx-auto px-4 py-8">
+        <div className="text-center mb-6">
           <h3 className="text-lg font-semibold">Affiliates</h3>
-          <div className="flex justify-center space-x-4 mt-2">
+          <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-3">
             {affiliates.map((affiliate) => (
               <a
                 key={affiliate.name}

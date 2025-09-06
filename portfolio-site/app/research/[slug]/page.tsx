@@ -1,6 +1,7 @@
 import { researchData } from '@/data/research';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 interface ResearchDetailPageProps {
   params: {
@@ -26,16 +27,15 @@ export default function ResearchDetailPage({ params }: ResearchDetailPageProps) 
       <div className="prose lg:prose-xl max-w-none mt-8">
         <p>{project.summary}</p>
         {project.githubUrl && (
-          <p>
+          <Button asChild className="mt-6">
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
             >
               View Project on GitHub &rarr;
             </a>
-          </p>
+          </Button>
         )}
       </div>
 

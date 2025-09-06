@@ -12,9 +12,16 @@ export const researchData: ResearchProject[] = [
     slug: 'in-silico-brain-drug-delivery-simulation',
     title: 'In-Silico Brain Drug Delivery Simulation',
     summary: 'A computational model simulating the delivery of therapeutic agents across the blood-brain barrier. This project explores novel methods for increasing drug efficacy for neurological disorders.',
-    category: 'Computational Neuroscience',
+    category: 'Medical',
     featured: true,
     githubUrl: 'https://github.com/SVG-campus/In-Silico-Brain-Drug-Delivery-Simulation',
+  },
+  {
+    slug: 'economic-modeling-of-tech-adoption',
+    title: 'Economic Modeling of Tech Adoption',
+    summary: 'This project analyzes the economic factors influencing the adoption rate of new technologies in emerging markets, using predictive modeling to forecast market penetration.',
+    category: 'Economics',
+    featured: false,
   },
   {
     slug: 'executive-function-in-startups',
@@ -24,17 +31,17 @@ export const researchData: ResearchProject[] = [
     featured: true,
   },
   {
+    slug: 'federated-learning-for-privacy',
+    title: 'Federated Learning for Privacy-Preserving AI',
+    summary: 'An implementation of a federated learning system that trains machine learning models on decentralized data without compromising user privacy.',
+    category: 'Machine Learning Algorithms',
+    featured: false,
+  },
+  {
     slug: 'neuro-inspired-ai-models',
     title: 'Neuro-Inspired AI Models for Pattern Recognition',
     summary: 'Developing next-generation artificial intelligence by mimicking neural structures found in the human visual cortex to improve the accuracy and efficiency of pattern recognition tasks.',
     category: 'Artificial Intelligence',
-    featured: false,
-  },
-  {
-    slug: 'placeholder-project-1',
-    title: 'Placeholder Research Project 1',
-    summary: 'This is a placeholder description for a future research project. The details are currently under wraps, but it promises to be an exciting development in its field.',
-    category: 'Computational Neuroscience',
     featured: false,
   },
 ];
