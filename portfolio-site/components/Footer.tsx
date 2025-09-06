@@ -13,21 +13,21 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-6">
           <h3 className="text-lg font-semibold">Affiliates</h3>
-          <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 mt-3">
+          <div className="flex justify-center flex-wrap gap-x-2 gap-y-2 mt-3">
             {affiliates.map((affiliate) => (
-              <a
-                key={affiliate.name}
-                href={affiliate.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-blue-400"
-              >
-                {affiliate.name}
-              </a>
+              <Button key={affiliate.name} variant="link" asChild className="text-gray-300 hover:text-white">
+                <a
+                  href={affiliate.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {affiliate.name}
+                </a>
+              </Button>
             ))}
           </div>
         </div>
-        <div className="text-center border-t border-gray-700 pt-4">
+        <div className="text-center border-t border-gray-700 pt-6">
           <p>&copy; {year} Prefrontal Corporate. All Rights Reserved.</p>
         </div>
       </div>
